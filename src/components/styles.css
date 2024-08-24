@@ -1,0 +1,22 @@
+/* Navbar styles */
+.navbar-links .nav-link {
+  color: #ffffff !important;
+  --bs-nav-link-padding-x: 0.5rem;
+}
+.navbar-links .nav-link.disabled {
+  color: gray !important;
+}
+.navbar-links .nav-link:hover {
+  color: #61DAFB !important;
+}
+.navbar-links .dropdown-menu {
+  --bs-dropdown-link-active-bg: none;
+  width: 100px !important;
+  min-width: 0 !important;
+  background-color: #282c34;      /* Added background color to match the Navbar */
+  border-radius: 10px;
+}
+.navbar-links .dropdown-item:hover {
+  color: #61DAFB !important;
+  --bs-dropdown-link-hover-bg: none;
+}

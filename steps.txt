@@ -1,0 +1,57 @@
+
+
+***** React server side with JWT *****
+
+npx create-react-app jwt-app
+
+
+client side
+------------
+cd jwt-app
+npm i nodemon concurrently react-router-dom axios jwt-decode
+npm start
+
+
+server side
+--------------
+mkdir server
+cd server
+npm init -y
+npm i express nodemon sqlite3 cors bcryptjs jsonwebtoken cookie-parser
+
+node
+require("crypto").randomBytes(35).toString("hex")
+
+
+update the client side package.json
+-------------------------------------
+"scripts": {
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server/server.js",
+    "client": "react-scripts start"
+  },
+  
+
+
+tailwind css (useless)
+-----------------------
+
+Ref: https://tailwindcss.com/docs/guides/create-react-app
+
+npm install -D tailwindcss
+npx tailwindcss init
+
+update tailwind.config.js file
+
+update the index.css file
+
+
+
+React Bootstrap
+----------------
+
+npm install react-bootstrap bootstrap
+import 'bootstrap/dist/css/bootstrap.min.css';   	--> in app.js file
